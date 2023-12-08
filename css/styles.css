@@ -40,6 +40,7 @@ img {
   width: 1158px;
   margin: auto;
   padding: 0 15px 0 15px;
+  max-width: 1440px;
 }
 
 .section {
@@ -53,6 +54,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba (46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba (46, 47, 66, 0.08);
 }
 
 .navigation {
@@ -110,13 +113,16 @@ img {
 .address {
   font-style: normal;
   display: flex;
-  margin-right: 40px;
+  padding: 0px;
+  margin-right: 0px;
 }
 
 .address-list {
   list-style: none;
   display: flex;
   gap: 40px;
+  padding: 0px;
+  margin-right: 0px;
 }
 
 .contact-value {
@@ -135,6 +141,14 @@ img {
 .main {
   background-color: var(--brand-color);
   padding: 188px 0 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main-header {
@@ -146,7 +160,7 @@ img {
   font-style: normal;
   max-width: 496px;
   display: block;
-  margin: auto;
+  margin: auto auto 48px auto;
 }
 
 .main-button {
@@ -193,6 +207,16 @@ img {
   margin-right: 0;
 }
 
+.core-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--background-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
 .core-header,
 .team-detail-header {
   font-weight: 500;
@@ -220,7 +244,8 @@ img {
 }
 
 .product-header,
-.team-header {
+.team-header,
+.customers-header {
   font-size: 36px;
   line-height: 1.11em;
   letter-spacing: 0.02em;
@@ -249,6 +274,8 @@ img {
   border-radius: 0px 0px 4px 4px;
   margin-right: 24px;
   width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-li li:last-child {
@@ -263,10 +290,80 @@ img {
   padding: 32px 0 32px;
 }
 
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+}
+
+.social-li {
+  width: 40px;
+  height: 40px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--brand-color2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--click-color);
+}
+
+.social-icons {
+  fill: var(--background-color);
+}
+
+.customers {
+  padding: 120px 0 120px;
+}
+
+.customers-ul {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-li {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--click-color);
+}
+
 /*Footer Start here style*/
 .footer {
   background: var(--brand-color);
   padding: 100px 0 100px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-details {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -289,6 +386,43 @@ img {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+.footer-social-text {
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-bottom: 16px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-li {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--brand-color2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-icons {
+  fill: var(--background-color);
 }
 
 /* portfolio page start here */
@@ -332,6 +466,8 @@ img {
   cursor: pointer;
   border: var(--button-hover);
   border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .cards {
@@ -347,8 +483,13 @@ img {
 .cards-li {
   margin-bottom: 48px;
   width: calc((100% - 48px) / 3);
+  display: block;
 }
-
+.cards-link:focus,
+.cards-link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .cards-detail {
   padding: 32px 16px;
   border: var(--button-border);
