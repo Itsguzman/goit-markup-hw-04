@@ -323,11 +323,11 @@ img {
 }
 
 .customers-header {
+  color: var(--brand-color);
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11em;
   text-align: center;
-  color: var(--brand-color);
-  margin-bottom: 72px;
 }
 
 .customers-ul {
@@ -336,8 +336,8 @@ img {
 }
 
 .customers-li {
-  width: calc((100% - 120px) / 6);
   height: 88px;
+  width: calc((100% - 120px) / 6);
 }
 
 .customers-link {
