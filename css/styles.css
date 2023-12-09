@@ -329,6 +329,7 @@ img {
   font-size: 36px;
   line-height: 1.11em;
   text-align: center;
+  justify-content: center;
 }
 
 .customers-ul {
@@ -403,13 +404,12 @@ img {
 }
 
 .footer-social-text {
+  margin-bottom: 16px;
   color: var(--white-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5em;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
-  margin: 0;
 }
 
 .footer-social-icons {
