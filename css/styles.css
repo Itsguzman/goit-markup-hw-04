@@ -319,7 +319,6 @@ img {
 }
 
 .customers {
-  width: 100%;
   padding: 120px 0 120px;
 }
 
@@ -403,7 +402,7 @@ img {
   margin-bottom: 16px;
 }
 
-.footer-social-text {
+.social-text {
   margin-bottom: 16px;
   color: var(--white-color);
   font-size: 16px;
