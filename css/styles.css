@@ -324,15 +324,17 @@ img {
 
 .customers-header {
   color: var(--brand-color);
-  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11em;
   text-align: center;
+  padding: 0;
+  margin-bottom: 72px;
 }
 
 .customers-ul {
   display: flex;
   gap: 24px;
+  list-style: none;
 }
 
 .customers-li {
@@ -396,7 +398,6 @@ img {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin-bottom: 16px;
 }
 
 .footer-social-text {
