@@ -411,6 +411,8 @@ img {
 .footer-social-icons {
   display: flex;
   gap: 16px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .footer-li {
