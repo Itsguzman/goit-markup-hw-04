@@ -322,6 +322,7 @@ img {
 
 .customers {
   padding: 120px 0 120px;
+  margin-bottom: 72px;
 }
 
 .customers-header {
@@ -399,6 +400,10 @@ img {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   max-width: 264px;
+  margin-bottom: 16px;
+}
+
+.social {
   margin-bottom: 16px;
 }
 
